@@ -1,0 +1,284 @@
+/* Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set html and body to full height and flex layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #F8F8F8;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content fills available space */
+#main-content {
+  flex: 1 0 auto;
+}
+
+/* Header styles */
+header {
+  background: #F8F8F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #B8860B;
+  gap: 0.5rem 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-shrink: 0;
+}
+
+.logo-container img {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+header h1 {
+  color: #333333;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-grow: 1;
+  min-width: 200px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.3s;
+  padding: 0.3rem 0.5rem;
+}
+
+nav a:hover {
+  color: #B8860B;
+}
+
+/* Login container styles */
+.login-container {
+  background: #fff;
+  padding: 3rem 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(184, 134, 11, 0.3);
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  text-align: center;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.login-container h2 {
+  color: #B8860B;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #B8860B;
+  outline: none;
+}
+
+.login-btn {
+  background-color: #B8860B;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #8B6508;
+}
+
+.login-container p {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.login-container a {
+  color: #B8860B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer styles */
+footer {
+  flex-shrink: 0;
+  background-color: #F8F8F8;
+  padding: 2rem;
+  border-top: 2px solid #B8860B;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+}
+
+footer a {
+  color: #B8860B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #8B6508;
+}
+
+/* Social icons in footer */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+footer .social-icons a {
+  font-size: 1.8rem;
+  color: #B8860B;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #b8860b;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* Responsive styles */
+
+/* Tablets and below */
+@media (max-width: 900px) {
+  .login-container {
+    max-width: 90%;
+    padding: 2rem;
+    margin: 1.5rem auto;
+  }
+
+  header {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  header nav a {
+    flex: none;
+  }
+
+  header nav a:last-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .login-container {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  footer {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer .social-icons {
+    gap: 1rem;
+  }
+
+  footer .social-icons a {
+    font-size: 1.4rem;
+  }
+}
