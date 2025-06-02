@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Cart</title>
+    <script src="https://kit.fontawesome.com/a2c3e5c3c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="/assets/logoo.png" alt="Logo" />
+            <h1>Jai's Art Studio</h1>
+        </div>
+        <nav>
+            <a href="index.html"><b>Home <i class="fa-solid fa-house"></i></b></a>
+            <a href="commission.html"><b>Commission Work <i class="fa-solid fa-briefcase"></i></b></a>
+            <a href="cart.html"><b>Cart <i class="fa-solid fa-cart-shopping"></i></b></a>
+            <a href="login.html"><b>Login <i class="fa-solid fa-user"></i></b></a>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <h1>Your Art Cart</h1>
+        <div class="cart-items" id="cart-items">
+        </div>
+
+        <div class="voucher-section">
+            <label for="voucher">Have a voucher?</label>
+            <div class="voucher-input-wrap">
+                <i class="fa-solid fa-ticket fa-lg voucher-icon"></i>
+                <input type="text" id="voucher" placeholder="Enter code e.g. ART10" />
+                <button class="apply-btn" onclick="applyVoucher()">Apply</button>
+            </div>
+        </div>
+
+        <div class="summary">
+            <div class="summary-item"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+            <div class="summary-item"><span>Delivery Fee</span><span id="delivery">₹0</span></div>
+            <div class="summary-item"><strong>Total</strong><strong id="total">₹0</strong></div>
+        </div>
+        <a href="delivery.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+    <section id="payment-security">
+        <h3>Secure Payment Methods</h3>
+        <div class="payment-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="MasterCard" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/PayPal_logo.svg" alt="PayPal" />
+            <img src="https://img.icons8.com/?size=160&id=BsiNqIHwKUq8&format=png" alt="">
+            <img src="https://img.icons8.com/?size=96&id=5RcHTSNy4fbL&format=png" alt="">
+            <img src="/assets/PhonePe-Logo.wine.svg" alt="">
+        </div>
+    </section>
+    
+
+    <div class="discount-box">
+        Use code <strong>"WELCOME15"</strong> for 15% OFF!
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+
+</html>
