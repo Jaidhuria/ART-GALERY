@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jai's Art Gallery</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+</head>
+
+<body>
+
+  <canvas id="bgCanvas"></canvas>
+  <header>
+    <div class="logo-container" aria-label="Jai's Art Gallery Logo">
+      <!-- Simple paint palette SVG icon -->
+      <div class="logo-container" aria-label="Jai's Art Gallery Logo">
+        <img src="/assets/logoo.png" alt="Jai's Art Gallery Logo" />
+        <h1>Jai's Art Studio</h1>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html"> <b>Home <i class="fa-solid fa-house"></i></b></a>
+      <!-- <a href="#artwork">Artwork</a> -->
+      <a href="commission.html"> <b>Commission Work <i class="fa-solid fa-briefcase"></i></b></a>
+      <a href="cart.html"> <b>Cart <i class="fa-solid fa-cart-shopping"></i></b></a>
+      <a href="login.html"><b> Login <i class="fa-solid fa-user"></i></b></a>
+    </nav>
+  </header>
+  <main>
+    <!-- Discount Token Box -->
+    <div class="discount-box">
+      Use code <strong>"WELCOME15"</strong> for 15% OFF!
+    </div>
+
+    <section class="hero">
+      <h2>Welcome to Jai's Art World!</h2>
+      <p>Explore beautiful pieces of art or commission a custom work just for you!</p>
+      <div class="button-group">
+      </div>
+      <div
+        style="text-align: center; margin: 2rem auto; padding: 1.2rem 2rem; background: #fff8dc; color: #B8860B; border-top: 2px solid #B8860B; border-bottom: 2px solid #B8860B; font-weight: 600; font-size: 1.2rem;">
+        🌟 <a href="portfolio.html" style="color: #B8860B; text-decoration: none;">Check out Jai's Exclusive
+          Portfolio</a> 🌟
+      </div>
+
+    </section>
+
+    <section id="art-categories" style="padding: 4rem 2rem; background-color: #fff;">
+      <h2 style="text-align: center; font-size: 2.5rem; font-weight: 700; color: #111; margin-bottom: 3rem;">
+        Explore Art Categories
+      </h2>
+      <div class="categories-container">
+        <a href="portfolio.html" class="category-card">
+          <i class="fa-solid fa-pencil"></i>
+          <h3>Sketches</h3>
+          <p>Detailed pencil sketches full of emotion and depth.</p>
+        </a>
+        <a href="portfolio.html" class="category-card">
+          <i class="fa-solid fa-paintbrush"></i>
+          <h3>Watercolors</h3>
+          <p>Soft, vibrant watercolors that bring life to imagination.</p>
+        </a>
+        <a href="portfolio.html" class="category-card">
+          <i class="fa-solid fa-droplet"></i>
+          <h3>Oil Pastels</h3>
+          <p>Bold and rich artworks created using oil pastel textures.</p>
+        </a>
+        <a href="portfolio.html" class="category-card">
+          <i class="fa-solid fa-circle-notch"></i>
+          <h3>Mandala</h3>
+          <p>Intricate mandala patterns with spiritual and creative energy.</p>
+        </a>
+      </div>
+    </section>
+  </section>
+    <section id="masterpieces" style="padding: 4rem 2rem; background-color: #fef9f0;">
+      <h2 style="text-align: center; font-size: 2.5rem; color: #b8860b; margin-bottom: 3rem; font-weight: 700;">
+        My Masterpieces
+      </h2>
+      <div class="masterpieces-container">
+        <div class="art-card">
+          <img src="/assets/Screenshot 2025-05-28 000911.png" alt="Masterpiece 1" />
+          <h3>The Eternal Guardian</h3>
+          <p>Protector of faith and strength, timeless in devotion and courage.</p>
+        </div>
+        <div class="art-card">
+          <img src="/assets/Screenshot 2025-05-28 000725.png" alt="Masterpiece 2" />
+          <h3> Enlightened Whispers</h3>
+          <p>Where every pattern echoes the calm of awakening.</p>
+        </div>
+        <div class="art-card">
+          <img src="/assets/Screenshot 2025-05-28 000756.png" alt="Masterpiece 3" />
+          <h3>Wild Grace</h3>
+          <p>A symbol of freedom and untamed spirit in every graceful stride.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="art-world-news" style="padding: 4rem 2rem; background-color: #fefefe;">
+      <h2 style="text-align: center; font-size: 2.5rem; font-weight: 700; color: #333; margin-bottom: 3rem;">
+        World Art News
+      </h2>
+      <div class="art-news-grid">
+        <div class="art-news-card">
+          <img
+            src="https://i0.wp.com/worldart.news/wp-content/uploads/2024/07/Georges-Jouve-caryatides.jpg?resize=600%2C450&quality=89&ssl=1"
+            alt="Van Gogh Discovery" />
+          <div class="tag">Antiques</div>
+          <h3>Rare Georges Jouve Caryatides Sell for Over $160,000, Doubling Pre-Sale Estimate</h3>
+          <p>Georges Jouve (1910-1964) was a renowned French ceramicist known for his innovative and modern approach to
+            ceramics. </p>
+          <a href="https://worldart.news/2024/07/04/rare-georges-jouve-caryatides-sell-for-over-160000-doubling-pre-sale-estimate/"
+            target="_blank" class="learn-more-btn">Learn More</a>
+        </div>
+
+        <div class="art-news-card">
+          <img
+            src="https://cdn.sanity.io/images/cxgd3urn/production/ec4326f1860a6f03659307fc524c94cea54264b9-2000x1431.jpg?rect=0,0,1908,1431&w=1080&h=810&q=85&fit=crop&auto=format"
+            alt="AI Art Debate" />
+          <div class="tag">Acquisitions</div>
+          <h3>Stanford University acquires Filipina American artist Pacita Abad’s archive</h3>
+          <p>“This is how art history gets written, from these primary-source materials,” says Stanford’s art and
+            architecture librarian</p>
+          <a href="https://www.theartnewspaper.com/2025/05/29/stanford-university-acquires-pacita-abad-archives"
+            target="_blank" class="learn-more-btn">Learn More</a>
+        </div>
+
+        <div class="art-news-card">
+          <img
+            src="https://cdn.sanity.io/images/cxgd3urn/production/941a6f8be736eeaf582f3847d99b98c948650626-4272x2848.jpg?rect=238,0,3797,2848&w=640&h=480&q=85&fit=crop&auto=format"
+            alt="Sistine Chapel Restoration" />
+          <div class="tag">Meuseum and heritage</div>
+          <h3>Pompidou to launch outpost near Unesco heritage site of Iguaçu falls in Brazil</h3>
+          <p>The new museum on the border with Argentina and Paraguay is due to open in November 2027..</p>
+          <a href="https://www.theartnewspaper.com/2025/05/29/pompidou-to-launch-outpost-near-unesco-heritage-site-of-iguacu-falls-in-brazil"
+            target="_blank" class="learn-more-btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section id="news" style="padding: 4rem 2rem; background-color: #fff;">
+      <h2 style="text-align: center; font-size: 2.5rem; font-weight: 700; color: #111; margin-bottom: 3rem;">
+        Upcoming Exhibition
+      </h2>
+      <div class="news-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9JeCYAmqwEPniSoXYjgZ92hj3EuCWY8rCQ&s"
+          alt="Exhibition Preview" class="news-image" />
+        <div class="news-content">
+          <h3> Art Exhibition 2025</h3>
+          <p>
+            Join us for an exclusive showcase of Jai's latest masterpieces, featuring sketches, watercolors, oil
+            pastels, and mandalas.
+          </p>
+          <p><strong>Date:</strong> 12 JULY 2025</p>
+          <p class="location">
+            <i class="fa-solid fa-location-dot"></i>
+            VIT UNIVERSITY , BHOPAL
+          </p>
+          <a href="exhibition-details.html" class="button-link">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>What Clients Say</h2>
+      <div class="testimonial-container">
+        <div class="testimonial">
+          <p>“Amazing artwork, exactly what I envisioned!”</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+          <h4>- Art Lover</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Jai’s attention to detail is incredible.”</p>
+          <div class="stars">
+            ★★★★☆
+          </div>
+          <h4>- Happy Customer</h4>
+        </div>
+        <div class="testimonial">
+          <p>“Highly recommend for custom portraits!”</p>
+          <div class="stars">
+            ★★★★★
+          </div>
+          <h4>- Satisfied Client</h4>
+        </div>
+      </div>
+      <p class="cta-review">Have a review? <a href="contact.html">Send it to me</a> and get featured here!</p>
+    </section>
+
+    <section class="guarantee-strip">
+      <p><i class="fa-solid fa-truck-fast"></i> Guaranteed Delivery within 7 days | <i
+          class="fa-solid fa-box"></i>Secure Packaging | <i class="fa-solid fa-location-dot"></i>Easy Tracking</p>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p> <b>Contact Us:</b></p>
+    <div class="social-icons" aria-label="Social Media Links">
+      <a href="https://www.instagram.com/jaidhuria07/"><i class="fab fa-instagram" aria-hidden="true"></i><span
+          class="sr-only">Instagram</span>
+      </a>
+      <a href="mailto:jaidhuria002@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span class="sr-only">Email</span>
+      </a>
+      <a href="https://wa.me/8529175002" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+        <span class="sr-only">WhatsApp</span>
+      </a>
+    </div>
+    <p> <b>&copy; 2025 Jai's Art Studio.</b> All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
